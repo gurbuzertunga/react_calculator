@@ -9,7 +9,7 @@ This project is a calculator, developed using React.
 
 ## Live-Demo
 
-[Calc-App](https://calculator-v12.herokuapp.com/)
+[Calc-App](https://cranky-agnesi-f16458.netlify.app/)
 
 
 ## Getting Started
