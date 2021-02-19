@@ -12,7 +12,7 @@ const ButtonPanel = () => (
       <Button name="7" property="nums" />
       <Button name="8" property="nums" />
       <Button name="9" property="nums" />
-      <Button name="*" property="basic-op" />
+      <Button name="X" property="basic-op" />
     </div>
     <div className="third-buttons">
       <Button name="4" property="nums" />
@@ -27,9 +27,9 @@ const ButtonPanel = () => (
       <Button name="+" property="basic-op" />
     </div>
     <div className="fifth-buttons">
+      <Button name="0" property="nums equal" />
       <Button name="." property="basic-op" />
-      <Button name="0" property="nums" />
-      <Button name="=" property="basic-op equal" />
+      <Button name="=" property="basic-op" />
     </div>
   </div>
 );
