@@ -1,9 +1,12 @@
-import './App.css';
+import ButtonPanel from './components/buttonPanel';
+import Display from './components/display';
+import './index.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello!</h1>
+      <Display result="0" />
+      <ButtonPanel />
     </div>
   );
 }
