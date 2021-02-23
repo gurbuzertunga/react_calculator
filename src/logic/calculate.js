@@ -23,6 +23,12 @@ const calculate = (data, name) => {
     } else if (operation) next = '0.';
     else if (total.indexOf(name) < 0) total += '.';
   }
+  if (!operation && !next) {
+    if (/\d/.test(name)) {
+      total += name;
+    }
+  }
+  if (name === '+' || name === '-' || name === 'x' || name === '/') operation = name;
 
   return { total, next, operation };
 };
