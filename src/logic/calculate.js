@@ -30,6 +30,10 @@ const calculate = (data, name) => {
   }
   if (name === '+' || name === '-' || name === 'x' || name === '/') operation = name;
 
+  if (name === 'AC') {
+    return '0';
+  }
+
   return { total, next, operation };
 };
 
