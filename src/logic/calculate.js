@@ -3,13 +3,15 @@ import operate from './operate';
 const calculate = (data, name) => {
   let { total, next, operation } = data;
 
+  total = total || '';
+  next = next || '';
   if (name === '+/-') {
-    if (total) total = operate(total, '-1', 'x');
-    else if (next) next = operate(next, '-1', 'x');
+    if (total && !operation) total = operate(total, '-1', 'X');
+    else if (total && operation) next = operate(next, '-1', 'X');
   }
   if (name === '%') {
-    if (next) next = operate(next, '100', '÷');
-    else if (total) total = operate(total, '100', '÷');
+    if (next) next = operate(next, '100', '/');
+    else if (total) total = operate(total, '100', '/');
   }
   if (name === '=') {
     if (next && total) total = operate(total, next, operation);
@@ -28,10 +30,21 @@ const calculate = (data, name) => {
       total += name;
     }
   }
-  if (name === '+' || name === '-' || name === 'x' || name === '/') operation = name;
+  if (name === '+' || name === '-' || name === 'X' || name === '/') {
+    operation = name;
+  }
+
+  if (total && operation) {
+    if (/\d/.test(name)) {
+      next += name;
+    }
+    if (next === '0') return {};
+  }
 
   if (name === 'AC') {
-    return '0';
+    total = null;
+    next = null;
+    operation = null;
   }
 
   return { total, next, operation };
