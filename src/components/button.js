@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-const Button = ({ name, property }) => (
-  <button type="button" className={property}>
+const Button = ({ name, property, clickHandler }) => (
+  <button type="button" className={property} onClick={() => clickHandler(name)}>
     {name}
   </button>
 );
@@ -9,6 +9,7 @@ const Button = ({ name, property }) => (
 Button.propTypes = {
   name: PropTypes.string,
   property: PropTypes.string,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
