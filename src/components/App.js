@@ -24,7 +24,6 @@ class App extends React.Component {
     let { total, next } = this.state;
     total = total || '0';
     next = next || '0';
-    console.log({ total, next });
     if (next !== '0') return next;
     return total;
   };
