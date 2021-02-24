@@ -20,13 +20,20 @@ class App extends React.Component {
     this.setState({ total, next, operation });
   }
 
-  render() {
-    let { total } = this.state;
+  update = () => {
+    let { total, next } = this.state;
     total = total || '0';
+    next = next || '0';
+    console.log({ total, next });
+    if (next !== '0') return next;
+    return total;
+  };
+
+  render() {
     return (
       <>
         <div className="App">
-          <Display result={total} />
+          <Display result={this.update()} />
           <ButtonPanel clickHandler={this.handleClick} />
         </div>
       </>

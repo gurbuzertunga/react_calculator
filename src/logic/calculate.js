@@ -38,6 +38,7 @@ const calculate = (data, name) => {
     if (/\d/.test(name)) {
       next += name;
     }
+    if (next === '0') return {};
   }
 
   if (name === 'AC') {
