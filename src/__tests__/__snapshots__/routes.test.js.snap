@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checks if the Routes have the correct directories should render to App route 1`] = `
+Array [
+  <header>
+    <h1>
+      Math Magicians
+    </h1>
+    <nav>
+      <li
+        className="link"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="link"
+      >
+        <a
+          href="/calculate"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li
+        className="link"
+      >
+        <a
+          href="/quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </li>
+    </nav>
+  </header>,
+  <div
+    className="content"
+  >
+    <h2>
+      Welcome to our page!
+    </h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi voluptatum consectetur eligendi praesentium, corporis quibusdam ipsa, aliquam facere veniam earum atque iusto sint tempora? Amet corrupti provident adipisci rerum inventore.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aliquid, nesciunt deleniti unde, earum iure sapiente neque fugit aliquam corrupti quaerat incidunt totam nostrum. Nisi sequi reiciendis facere quos ut?
+    </p>
+  </div>,
+]
+`;
+
+exports[`checks if the Routes have the correct directories should render to Home route 1`] = `
+Array [
+  <header>
+    <h1>
+      Math Magicians
+    </h1>
+    <nav>
+      <li
+        className="link"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="link"
+      >
+        <a
+          href="/calculate"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li
+        className="link"
+      >
+        <a
+          href="/quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </li>
+    </nav>
+  </header>,
+  <div
+    className="content"
+  >
+    <h2>
+      Welcome to our page!
+    </h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi voluptatum consectetur eligendi praesentium, corporis quibusdam ipsa, aliquam facere veniam earum atque iusto sint tempora? Amet corrupti provident adipisci rerum inventore.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aliquid, nesciunt deleniti unde, earum iure sapiente neque fugit aliquam corrupti quaerat incidunt totam nostrum. Nisi sequi reiciendis facere quos ut?
+    </p>
+  </div>,
+]
+`;
+
+exports[`checks if the Routes have the correct directories should render to Quote route 1`] = `
+Array [
+  <header>
+    <h1>
+      Math Magicians
+    </h1>
+    <nav>
+      <li
+        className="link"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="link"
+      >
+        <a
+          href="/calculate"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li
+        className="link"
+      >
+        <a
+          href="/quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </li>
+    </nav>
+  </header>,
+  <div
+    className="content"
+  >
+    <h2>
+      Welcome to our page!
+    </h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi voluptatum consectetur eligendi praesentium, corporis quibusdam ipsa, aliquam facere veniam earum atque iusto sint tempora? Amet corrupti provident adipisci rerum inventore.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aliquid, nesciunt deleniti unde, earum iure sapiente neque fugit aliquam corrupti quaerat incidunt totam nostrum. Nisi sequi reiciendis facere quos ut?
+    </p>
+  </div>,
+]
+`;
