@@ -1,7 +1,8 @@
 body {
   margin: 0;
   background-color: #0093e9;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background-image: url('./bg.jpg');
+  background-size: cover;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -40,7 +41,7 @@ code {
 .display {
   color: white;
   background: #1c191c;
-  line-height: 130px;
+  line-height: 90px;
   text-align: end;
   font-size: 6em;
   width: 400px;
@@ -48,7 +49,7 @@ code {
 
 .nums,
 .basic-op {
-  line-height: 80px;
+  line-height: 60px;
   text-align: center;
   font-size: 4em;
   width: 100px;
@@ -82,4 +83,24 @@ button {
 
 button:active {
   box-shadow: inset 0 0 80px 0 rgba(0, 0, 0, 0.25);
+}
+
+header, nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+ align-items: center;
+ width: 50%;
+}
+
+.link {
+  list-style: none;
+}
+
+.link * {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
 }
